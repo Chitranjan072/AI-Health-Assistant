@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Diagnosis Result</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="result">
+<div class="result-box">
+    <h2>Your Diagnosis Result</h2>
+    <pre id="resultOutput">Loading...</pre>
+    <button onclick="location.href='diagnosis.html'">Check Another</button>
+</div>
+<script>
+    document.getElementById("resultOutput").innerText = localStorage.getItem("diagnosisResult") || "No result found.";
+</script>
+</body>
+</html>

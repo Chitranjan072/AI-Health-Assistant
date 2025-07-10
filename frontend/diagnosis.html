@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Diagnosis</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="diagnosis">
+<div class="container">
+    <h2>Enter Your Symptoms & Age</h2>
+    <form id="diagnosisForm">
+        <input type="text" id="symptoms" placeholder="e.g. fever, cough" required /><br />
+        <input type="number" id="age" placeholder="Enter your age" required /><br />
+        <button type="submit">Diagnose</button>
+    </form>
+</div>
+<img src="ambulance.gif" class="ambulance" onclick="toggleDirection()" />
+<script src="script.js"></script>
+</body>
+</html>
